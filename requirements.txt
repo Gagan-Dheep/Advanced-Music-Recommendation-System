@@ -118,7 +118,6 @@ prompt-toolkit==3.0.43
 propcache==0.2.1
 protobuf==5.29.2
 psutil==5.9.7
-psycopg2==2.9.9
 pure-eval==0.2.2
 pyarrow==18.1.0
 pycparser==2.21
