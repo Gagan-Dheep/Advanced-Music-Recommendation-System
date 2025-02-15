@@ -45,8 +45,8 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 # Load the pre-processed music data and similarity matrix (content-based info)
 @st.cache_data(show_spinner=False)
 def load_data():
-    music = pickle.load(open('required_fd', 'rb'))
-    similarity = pickle.load(open('similar_needed', 'rb'))
+    music = pickle.load(open('fd_dataframe', 'rb'))
+    similarity = pickle.load(open('similarity_Vector', 'rb'))
     with open('final_colaborative_music_recommender_model.pkl', 'rb') as file:
         final_algorithm = pickle.load(file)
     return music, similarity, final_algorithm
